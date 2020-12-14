@@ -21,7 +21,7 @@ public class NoNullArrayList<T> extends ArrayList<T> {
 
     public void T set(int index, T element) {
         if(element == null) throw new IllegalArgumentException("you cannot put null here");
-        super.set(index, value);
+        super.set(index, element);
     }
 
 
