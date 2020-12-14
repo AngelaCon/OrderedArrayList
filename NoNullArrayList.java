@@ -11,7 +11,7 @@ public class NoNullArrayList<T> extends ArrayList<T> {
 
     public boolean add(T element) {
         if(element == null) throw new IllegalArgumentException("you cannot put null here");
-        super.add(element);
+        return super.add(element);
     }
 
     public void add(int index, T element) {
@@ -19,11 +19,9 @@ public class NoNullArrayList<T> extends ArrayList<T> {
         super.add(index, element);
     }
 
-    public void T set(int index, T element) {
+    public T set(int index, T element) {
         if(element == null) throw new IllegalArgumentException("you cannot put null here");
-        super.set(index, element);
+        return super.set(index, element);
     }
-
-
 
 }
