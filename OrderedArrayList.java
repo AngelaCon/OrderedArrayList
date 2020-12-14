@@ -8,7 +8,8 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
     }
 
     public boolean add(T element) {
-        return super.add(sortIndex(element), element);
+        super.add(sortIndex(element), element);
+        return true;
     }
 
 
