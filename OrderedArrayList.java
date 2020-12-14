@@ -3,7 +3,7 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
         super();
     }
 
-    public OrderedArrayList(startingCapacity) {
+    public OrderedArrayList(int startingCapacity) {
         super(startingCapacity);
     }
 
@@ -20,7 +20,7 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
     public T set(int index, T element) {
         T remove = super.get(index);
         super.remove(index);
-        super.add(getSortIndex(element), element);
+        super.add(sortIndex(element), element);
         return remove;
     }
 
