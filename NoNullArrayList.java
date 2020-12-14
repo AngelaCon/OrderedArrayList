@@ -9,16 +9,16 @@ public class NoNullArrayList<T> extends ArrayList<T> {
         super(startingCapacity);
     }
 
-    public void add() {
+    public boolean add() {
 
     }
 
-    public add(int index) {
+    public void add(int index) {
 
     }
 
-    public set(int index, int value) {
-        
+    public T set(int index, int value) {
+
     }
 
 
